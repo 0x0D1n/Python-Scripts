@@ -20,6 +20,9 @@ def decode(string_to_decode):
                 new_index = clean_url.index(new_string)
                 decoded_string += clean_chars[new_index]
                 i += 3
+            else:
+                print("There is probably some unknown URL encoded strings !")
+                break
         else:
             decoded_string += string_to_decode[i]
             i += 1
