@@ -5,7 +5,7 @@ url = ""
 username = "admin"
 password = "^"
 
-possible_chars = list(string.ascii_letters) + list(string.digits) + ["\\"+c for c in string.punctuation+string.whitespace ]
+possible_chars = ...
 
 def retrievePasswordLength(url, username):
     for x in range(1, 25):
