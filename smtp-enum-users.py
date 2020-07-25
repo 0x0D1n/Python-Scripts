@@ -24,7 +24,7 @@ with open(wordlist, 'r') as f:
         tn.write(b"VRFY " + array_users[index].encode('ascii'))
         sleep(TIMEOUT)
         answer = tn.expect([b"2.0.0", b"rejected"])
-        print(str(answer[2]))
+        #print(str(answer[2]))
         if "2.0.0" in str(answer[2]):
             print("[+] Found user : {}".format(array_users[index]).rstrip())
         elif "too many errors" in str(answer[2]):
